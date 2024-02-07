@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exes treinos</title>
+</head>
+<body>
+      <input type="number" name="nu" id="nu">
+     <button id="btn">Clique</button>
+</body>
+  <script>
+         const botao2 = document.querySelector("#btn")
+         const botao1 = document.querySelector("#nu")
+
+         botao2.addEventListener("click",function(e){
+            const NumeroALe =  Math.floor(Math.random() * 10)
+           const acertou = botao1.value == NumeroALe
+           alert(acertou? "aceito!":"errou!")
+           if(!acertou) alert(NumeroALe)
+         })
+       
+        
+  </script>
+</html>

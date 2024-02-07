@@ -1,0 +1,26 @@
+-----Java Script------
+
+Concatenaçao = use o + para juntar outra palavra com outra ex ("prazer em ter conheçer: ," + Nome) 
+
+String para Number = Number("") tanto numeros inteiros quanto float ex: 3.4,o.32323,o.22222
+
+Number para String =  String("") ou "".toString()
+
+se quiser colocar mais casas depois da virgula,use "".toFixed(2) --2 para pular 2 casas exemplo 1400,5 -> 1400,50
+
+"".toLocaleString("pt-br", {style: "currency", currency: 'BRl'}) comando para mostrar em moeda do pais ex : R$ 13.443,12
+
+
+para economizar espaço quando for fazer eventos, use esse comando no scritp 
+                 "".addEventListener("evento","a funcao")
+
+na hora do switch nao esqueça de colocar o break don't forget !!!
+
+
+"".push("") add um elemento na ultima posiçao do arraw
+
+"".length mostra o comprimento do arraw
+
+"".sort()Organiza os numeros de um arraw 
+
+"".indexOf("") o elemento que colocou o javascript irá tentar procurar e mostra a posiçao que ele esta (se aparecer -1 e porque nao foi encontrado)

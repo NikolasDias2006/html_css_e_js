@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testandp formularios</title>
+    <style>
+        fieldset {
+            background-color: antiquewhite;
+        }
+    </style>
+</head>
+<body>
+        <h1>Exemplos de formularios</h1>
+
+        <fieldset>
+            <legend>Dados Para registros</legend>
+            <form
+            action="javascript.js"
+            method="get"
+            autocomplete="on">
+            <p><label for="Nome">Nome</label>
+            <input type="text" name="Nome" id="Nome"
+            minlength="5"
+            maxlength="20"
+            required>
+            
+            </p>
+            
+            <p>
+                <label for="gma">E-mail</label>
+                <input type="email" id="gma"
+                required
+                autocomplete="email">
+            </p>
+            <p>
+            
+                <label for="tel">Telefone</label>
+                <input type="tel" id="tel"
+                autocomplete="tel-national"
+                required>
+            
+            </p>
+            <p><input type="submit" value="Enviar"></p>
+            
+            <p><input type="reset" value="Resetar"></p>
+                   
+                   </form>
+        </fieldset>
+</body>
+</html>

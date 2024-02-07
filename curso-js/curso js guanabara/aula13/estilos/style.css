@@ -1,0 +1,47 @@
+@charset "utf-8";
+
+/*Paleta de cores*/
+:root {
+    --cor1: #65AFFF;
+    --cor2: #335C81;
+    --cor3: #1B2845;
+    --corbonus: #3083DC;
+}
+
+body {
+    background-color: var(--cor1);
+    font:normal 15pt arial
+}
+
+header {
+    text-align: center;
+}
+
+section {
+    background-color: white;
+    border-radius: 30px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.507);
+    padding: 15px;
+    width: 70vw;
+    margin: auto;
+}
+
+div#msg {
+    text-align: center;
+    padding: 10px;
+    font: normal 20px arial;
+    font-size: 2em;
+}
+
+div > img.Photo {
+    display: block;
+    margin: auto;
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+}
+
+footer {
+    font-style: italic;
+    text-align: center;
+}

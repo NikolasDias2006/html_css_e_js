@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estruturas de repetiçoes</title>
+</head>
+<body>
+     <div id="resul"></div>
+</body>
+     <script>
+            const result = document.querySelector("#resul")
+
+            let count = 1
+            while(count <= 5) {
+                result.innerHTML += "Repetiçao <br>"
+                count ++
+            }
+
+            let count2 = 1
+
+            do {
+               result.innerHTML += "<p>Repetçao <br>"
+                count2 ++
+            } while(count2 <= 5)
+
+            for(let i=0;i<=10;i++) {
+               result.innerHTML += `<p> ${i}`
+            }
+            
+            for(let i=0;i<=20;i+=2) {
+               result.innerHTML += `<p> ${i}`
+            }
+
+            for(let i=0;i<=10;i++) {
+               result.innerHTML += `<br> 10 X ${i} = ${10*i}`
+            }
+
+     </script>
+</html>

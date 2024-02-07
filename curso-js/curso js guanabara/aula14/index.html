@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Nascimento</title>
+</head>
+<body>
+    <header>
+         <h1>Verificador de idade</h1>
+    </header>
+
+    <section>
+        <div>
+             <p>Ano de Nascimento: 
+                <input type="number" name="idade" id="idade"
+                min="0">
+             </p>
+             <p>Sexo:
+                <input type="radio" name="sexo" id="mas" checked>
+                <label for="sexo">Masculino</label>
+
+                <input type="radio" name="sexo" id="fem">
+                <label for="fem">Feminino</label>
+             </p>
+             <p>
+                <input type="button" value="Verificar"
+                onclick="Verificar()">
+             </p>
+        </div>
+        <div id="res">
+            <strong>preencha acima para ver o resultado em baixo</strong>
+        </div>
+    </section>
+    <footer><p>&copy;Site feito pelo Professor Guanabara e refeito por Nikolas_Dev</p></footer>
+</body>
+<script src="script.js"></script>
+</html>

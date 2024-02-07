@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contagem regressiva</title>
+    <style>
+        img {
+             display: block;
+             margin: auto;
+             padding-top: 50px;
+             max-width: 70vw;
+             max-height: 70vh;
+        }
+    </style>
+</head>
+<body>
+    <img id="img-num" src="https://cdn-icons-png.flaticon.com/512/3841/3841730.png" alt="numero 5">
+</body>
+     <script>
+
+             //Jeito De Noob
+
+            // const img = document.querySelector("#img-num")
+            
+            // function Fourseconds() {
+            //     img.src = "https://cdn-icons-png.flaticon.com/512/3841/3841729.png"
+            // }
+            // function Threeseconds() {
+            //     img.src = "https://cdn-icons-png.flaticon.com/512/3841/3841715.png"
+            // }
+            // function Twoseconds() {
+            //     img.src = "https://cdn-icons-png.flaticon.com/512/3841/3841714.png"
+            // }
+            // function Oneseconds() {
+            //     img.src = "https://cdn-icons-png.flaticon.com/512/3841/3841714.png"
+            // }
+                
+            // setTimeout(Fourseconds, 2000)
+            // setTimeout(Threeseconds, 3000)
+            // setTimeout(Twoseconds, 4000)
+            // setTimeout(Oneseconds, 5000)
+
+            //Jeito de ProPlayer 
+            const img = document.querySelector("#img-num")
+
+            const imageUrls = [
+            "https://cdn-icons-png.flaticon.com/512/3841/3841729.png",
+            "https://cdn-icons-png.flaticon.com/512/3841/3841715.png",
+            "https://cdn-icons-png.flaticon.com/512/3841/3841714.png",
+            "https://cdn-icons-png.flaticon.com/512/5111/5111489.png"
+            ]
+            //url armazena o link, index quantidade de elemento que o array possui.
+            imageUrls.forEach((url,index) => {
+                setTimeout(() => {
+                    img.src = url
+                    console.log(index)
+                }, (index +1)*1000)
+            })
+
+     </script>
+</html>

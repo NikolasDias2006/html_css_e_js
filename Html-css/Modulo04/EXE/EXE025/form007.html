@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+     <h1>Exemplos de Formularios</h1>
+
+     <form 
+
+     action="javascript.js" 
+     method="post"
+     autocomplete="on">
+     
+     <p>
+        <label for="Esta">Estado</label>
+        <select name="Esta" id="Esta">
+
+            <option
+
+             value="" 
+            selected> Escola o seu Estado 
+           
+          </option>
+
+            <optgroup label="Regiao Norte">
+                <option value="Am">Amazonias</option>
+            </optgroup>
+
+            <optgroup label="Regiao oeste">
+                <option value="MG">Minas Gerais</option>
+            </optgroup>
+
+            <optgroup label="Regiao Sudeste">
+                <option value="SP">Sao Paulo</option>
+
+            </optgroup>
+        
+        </select>
+     </p>
+
+    
+
+     <p>
+        <label for="Pro">Profissao</label>
+        <input type="text" name="Pro" id="Pro" list="Prof">
+        
+        <datalist id="Prof">
+
+              <option>Engenheiro</option>
+              <option value="Pro">Programador</option>
+              <option>Jardineiro</option>
+
+        </datalist>
+     </p>
+
+     <p>
+        <label for="msg">Mensagem: </label>
+    </p>
+
+    <p>
+        <textarea name="msg" id="msg" cols="30" rows="10" placeholder="sua Mensagem aqui..."></textarea>
+    </p>
+
+     <p>
+        <input type="submit" value="Enviar">
+
+        <input type="reset" value="Resetar">
+        
+     </p>
+
+     </form>
+</body>
+</html>

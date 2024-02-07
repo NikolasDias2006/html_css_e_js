@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EXE005</title>
+    <style>
+        body {
+            background-color: rgba(0, 0, 0, 0.856);
+            color:white;
+            font:normal 18px arial
+        }
+    </style>
+</head>
+<body>
+    <h1 class="text">Dom studying...</h1>
+
+    <h1>Test..</h1>
+    <p>hello,how are you ? i feel good because i practice <strong>EXERCISE</strong> everyday</p>
+    <div id="msm">press me</div>
+    <p>i like cake,cake are delicious with chocolate is awesome</p><br>
+</body>
+<script>
+    document.write("hello,i write this message for you </p>")
+     var p1 = document.getElementsByTagName("p")[1] /* buscnado uma tag p da 2 possiçao*/
+     var p2 = document.getElementsByTagName("strong")[0]
+     var d = document.getElementById("msm")
+     var text = document.querySelector("h1.text")
+     document.write("i write that : " + p1.innerText)
+     p2.style.color = "green"
+     d.style.background = "green"
+     d.innerText = "Testing...this html is has been Modifid"
+     text.style.background = "blue"
+     
+</script>
+</html>

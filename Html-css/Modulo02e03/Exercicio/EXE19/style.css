@@ -1,0 +1,14 @@
+@import "UTF-8";
+body {
+    background-color: aquamarine;   
+    padding: 25px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+h1,h2,p {
+       color: rgb(3, 104, 41);
+}
+
+.Teste {
+    background-color: rgb(42, 240, 124);
+    text-align: center;
+}

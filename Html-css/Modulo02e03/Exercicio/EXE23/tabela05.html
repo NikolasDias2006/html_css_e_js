@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela 05</title>
+    <style>
+         body {
+            font-family: Arial, Helvetica, sans-serif;
+         }
+
+         div#container {
+             overflow-x: auto;
+         }
+
+         table {
+            width: 500px;
+            border-collapse: collapse;
+         }
+
+         caption {
+            font-size: 1.3em;
+            font-size: border;
+            padding: 8px;
+            border: 1px solid black;
+            padding: 10px;
+            background-color: gray;
+            color: white;
+        }
+             col.Nome {
+             background-color: aqua;
+         }
+            
+            col.COL3 {
+                background-color: rgb(83, 255, 83)
+            }
+
+         th,td {
+            border:1px solid black;
+            padding: 8px;
+         }
+    
+    </style>
+</head>
+<body>
+    <h1>Exercicio da tabela</h1>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis tempore facere soluta veniam nulla delectus. Maxime, tempora suscipit, a deleniti saepe similique vero nesciunt, quisquam maiores repellendus dolore dolorem? Ea.</p>
+    
+  <div id="Container">
+      <table>
+           <colgroup>
+              <col class="Nome">
+              <col class="COL3" span="3">
+           </colgroup>
+            <caption>Cadastro</caption>
+            <tr>
+                <th scope="col">Nome</th>
+                <th scope="col">Sexo</th>
+                <th scope="col">Idade</th>
+                <th scope="col">Profissao</th>
+            </tr>
+            <tr>
+                <td>Ana Maria</td>
+                <td>F</td>
+                <td>25</td>
+                <td>Jonalismo</td>
+            </tr>
+            <tr class="Destaque">
+                <td >Nikolas lindo dos lindos</td>
+                <td>M</td>
+                <td>16</td>
+                <td>Programador</td>
+            </tr>
+            <tr>
+                <td>Marcos</td>
+                <td>M</td>
+                <td>32</td>
+                <td>Encanador</td>
+            </tr>
+            <tr>
+                <td>Larisa meganoela</td>
+                <td>F</td>
+                <td>47</td>
+                <td>Jardineira</td>
+            </tr>
+      </table>
+  </div>
+</body>
+</html>

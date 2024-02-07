@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lam</title>
+</head>
+<body>
+     <h1>Teste</h1>
+     <img id="img" src="https://github.com/gabrieldarezzo/helpjs-ravi/blob/master/images/lampada.jpg?raw=true" alt="The lamp">
+</body>
+<script>
+     const img = document.querySelector("#img")
+
+     img.addEventListener("mouseover",function(e){
+        img.setAttribute('src', "https://github.com/gabrieldarezzo/helpjs-ravi/blob/master/images/lampada-on.jpg?raw=true")
+     })
+
+     img.addEventListener("mouseout",function(e){
+        img.setAttribute('src', "https://github.com/gabrieldarezzo/helpjs-ravi/blob/master/images/lampada.jpg?raw=true")
+     })
+
+</script>
+</html>

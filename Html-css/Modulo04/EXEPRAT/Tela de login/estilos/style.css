@@ -1,0 +1,135 @@
+@charset "utf-8";
+
+/*Paletas de cores: */
+
+:root {
+    --cor1:#17C3B2;
+    --cor2:#227C9D;
+}
+
+* {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+    padding:0px;
+    margin: 0px;
+    box-sizing:border-box;
+}
+
+body,html {
+       background-color: var(--cor2);
+       height: 100vh;
+       width: 100vw;
+}
+
+main {
+    height: 100vh;
+    width:  100vw;
+}
+
+section#login {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color:white;
+    width:250px;
+    height: 500px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.49);
+
+    transform: translate(-50%, -50%);
+    transition: width 0.3s,height 0.3s;
+}
+
+section#login > div#imagem {
+    background: var(--cor2) url(../Imagem/pexels-andras-stefuca-17568716.jpg) no-repeat;
+    background-size: cover;
+
+    height:200px;
+}
+
+section#login > div#formulario {
+    display: block;
+    padding: 10px;
+}
+
+div#formulario > h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+div#formulario > p {
+    font-size: 0.8em;
+}
+
+div.campo > input {
+    background-color: #94fff4;
+    font-size: 1em;
+    height: 100%;
+    width: calc(100% - 45px);
+    border: none;
+    border-radius: 8px;
+    transform: translateY(-10px);
+}
+
+div.campo > span {
+    color: white;
+    font-size: 2em;
+    width: 40px;
+    padding:5px;
+}
+
+div.campo > input:focus-within {
+      background-color: white;
+}
+
+form > div.campo {
+    background-color: var(--cor1);
+    height:45px;
+    border-radius: 8px;
+    margin: 5px 0px;
+    border: 3px solid var(--cor1);
+}
+
+form #Entrar {
+   display: block;
+   width: 100%;
+   height:40px;
+   font-size: 1em;
+   background-color: var(--cor2);
+   border: none;
+   border-radius: 5px;
+   margin-top: 10px;
+   color: white;
+   cursor: pointer;
+}
+
+form #Entrar:hover {
+    background-color:#154d61;
+}
+
+form > a.botao {
+    display: block;
+    text-align: center;
+    font-size:1em;
+    width: 100%;
+    height: 40px;
+    padding-top: 5px;
+    margin-top: 5px;
+    background-color: #1aa8db;
+    color: #0b313e;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+  a.botao:hover {
+    background-color: #137295;
+  }
+
+form > a.botao > span {
+    font-size: .8em;
+}
+
+div.campo > label {
+   display: none;
+}

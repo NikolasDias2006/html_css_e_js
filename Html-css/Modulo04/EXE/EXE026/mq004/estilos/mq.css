@@ -1,0 +1,62 @@
+@charset "UTF-8";
+
+/* todas as midias */
+
+
+@media print {
+
+  * {
+    font-family: 'Courier New', Courier, monospace;
+  }
+
+  main {
+    border: 2px dashed black;
+    width:90vw;
+  }
+
+  img#pc  {display: none;}
+  img#cel {display: none;}
+  img#pri {display: block;}
+  img#tab {display: none;}
+  img#tv  {display: none;}
+
+  main::after {
+      content: "Impressora digital onde imprimir...era uma vez,uma impressora....";
+      text-decoration: line-through;
+  }
+}
+
+@media screen and (min-width:768px) and (max-width:991px) {
+
+     body {
+        background-image: url(../imagens/back-tablet.jpg);
+      }
+     img#pc  {display: none;}
+     img#cel {display: none;}
+     img#pri {display: none;}
+     img#tab {display: block;}
+     img#tv  {display: none;}
+         
+    }
+
+@media screen and (min-width:992px) and (max-width:1199px) {
+      body {
+        background-image: url(../imagens/back-pc.jpg);
+      }
+      img#pc  {display: block;}
+      img#cel {display: none;}
+      img#pri {display: none;}
+      img#tab {display: none;}
+      img#tv  {display: none;}
+}
+
+@media screen and (min-width:1200px) {
+       body {
+        background-image: url(../imagens/back-tv.jpg);
+       }
+    img#pc  {display: none;}
+    img#cel {display: none;}
+    img#pri {display: none;}
+    img#tab {display: none;}
+    img#tv  {display: block;}
+}

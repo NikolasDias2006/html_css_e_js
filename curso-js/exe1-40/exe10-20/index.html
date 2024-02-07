@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soma</title>
+    <p>
+        <input type="text" name="texte" id="soma1">
+        <input type="text" name="texte" id="soma2">
+
+       <button id="btn-soma">Somar</button>
+       <button id="btn-multi">Multiplicar</button>
+    </p>
+      <div id="Resultado"></div>
+</head>
+<body>
+    
+</body>
+<script>
+        const Somar = document.querySelector("#btn-soma")
+        const Multi = document.querySelector("#btn-multi")
+        const numero1 = document.querySelector("#soma1")
+        const numero2 = document.querySelector("#soma2")
+        const Resul = document.querySelector("#Resultado")
+       
+
+        function ContaDmais(a , b) {
+          return Number(a) + Number(b)
+        }
+
+        function ContaDmulti(a , b) {
+          return Number(a) * Number(b)
+        }
+
+        function imoupar(index) {
+            return index % 2 === 0 ? "Par":"Impar"
+        }
+
+        Somar.addEventListener("click",function(e) {
+        const Somado = ContaDmais(numero1.value,numero2.value)   
+        const ImOrPar = imoupar(Somado)
+        Resul.innerHTML = Somado
+        Resul.innerHTML += `<br>Resto da divisao de 5/2 é ${5%2}`
+        Resul.innerHTML += `<br>Sua soma deu ${ImOrPar}`
+        })
+
+        
+        Multi.addEventListener("click",function(e) {
+        const Multiplicar = ContaDmulti(numero1.value,numero2.value)   
+        const ImOrPar = imoupar(Multiplicar)
+        Resul.innerHTML = Multiplicar
+        Resul.innerHTML += `<br>Resto da divisao de 5/2 é ${5%2}`
+        Resul.innerHTML += `<br>Sua soma deu ${ImOrPar}`
+        })
+
+       
+
+</script>
+</html>

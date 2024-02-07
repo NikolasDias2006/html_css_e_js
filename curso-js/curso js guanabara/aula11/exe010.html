@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exe010</title>
+</head>
+<body>
+    <h1>Fine system</h1>
+    <input type="number" name="txt1" id="txt1"> Km/h
+    <input type="button" value="Verificar" onclick="calcu()">
+
+    <div id="res">result</div>
+</body>
+<script>
+    function calcu() {
+      var speed = document.getElementById("txt1")
+      var res = document.querySelector("div#res")
+      var vel = Number(speed.value)
+      res.innerHTML = ` <p> Your media speed is ${vel} Km/H`
+        if (vel > 60) {
+            res.innerHTML +=" <p> unfortunately you are fined"
+        }
+      res.innerHTML += `Good Travel`
+    }
+</script>
+</html>

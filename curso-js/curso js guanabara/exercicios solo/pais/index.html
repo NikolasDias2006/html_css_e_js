@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>country</title>
+    <style>
+       
+       fieldset {
+            width: 300px;
+            display: block;
+            margin: auto;
+        }
+
+        #text {
+            text-align: center;
+        }
+
+
+        #button {
+            width: 100px;
+            display: block;
+            margin: auto;
+        }
+     
+    
+        div {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="text">Where are you from ?</h1>
+    <fieldset>
+         <legend>Choose you country</legend>
+    <input type="radio" name="country" id="br" value="br" checked="br">
+    <label for="br">  Brazil<br></label>
+
+    <input type="radio" name="country" id="eua" value="eua">
+    <label for="eua">United states<br></label>
+
+    <input id="button" type="submit" value="Send" onclick="press()"> 
+    </fieldset>
+       <div id="res">you are Brazilian</div>
+</body>
+<script>
+        function press() {
+        var a = document.getElementById("eua")
+        var b = document.getElementById("br")  
+        var res = document.querySelector
+        ("div#res")
+        
+        if (res != "you are Brazilian" ) {
+         res.innerHTML = "you are american"
+        } else {
+         res.innerHTML = "you are Brazilian"
+        }
+
+    }
+ 
+</script>
+</html>

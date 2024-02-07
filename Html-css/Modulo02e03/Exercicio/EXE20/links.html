@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+          body {
+             background-color: rgb(9, 212, 94);
+             font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+          }
+          h1,p {
+            color: rgb(1, 141, 1);
+          }
+          a,ol {
+            color: rgb(46, 11, 247);
+            text-decoration: none;
+            font-weight: bolder;
+          }
+          a:visited {
+            color: blue;
+          }
+       a#Next {
+            color: #519702;
+        }
+        a:hover {
+            text-decoration: underline;
+            color: aquamarine;
+        }
+        a:active {
+            color: crimson;
+        }
+        a::after {
+            content: " {link}";
+            font-weight: normal;
+            color: blueviolet;
+        }
+        a#Next::after{
+            content: " {Return}";
+            font-weight: normal;
+            color: rgb(144, 42, 240);
+        }
+        .Muito-Bom{
+            background-color: rgba(5, 5, 247, 0.349);
+        }
+    </style>
+</head>
+<body>
+      <h1>Links</h1>
+      <p>My favorite channel on youtube</p>
+      <ol>
+         <li><a href="https://www.youtube.com/@GamesEduUu" target="_blank" rel="External" class="Muito-Bom">GamesEduuu</a></li>
+
+         <li><a href="https://www.youtube.com/@MrBeast" target="_blank" rel="External">MrBeast</a></li>
+
+         <li><a href="https://www.youtube.com/@codigofontetv" target="_blank" rel="External">Código Fonte TV</a></li>
+     
+        </ol>
+      <p><a id="Next" href="Pseudo-classes.html" rel="Next">Return to pag 1</a></p>
+</body>
+</html>
+

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays</title>
+</head>
+<body>
+     <input type="text" name="text" id="text" autocomplete="off">
+     <button id="add">Adicionar</button>
+     <ul id="listaItens"></ul>
+</body>
+     <script> 
+        const  botaoAdd = document.querySelector("#add")
+        const texto = document.querySelector("#text")
+        const lista = document.querySelector("#listaItens")
+       
+        let linhatextual = [] //criando um array
+        botaoAdd.addEventListener("click",e => {
+            const inputValue = texto.value.trim()
+            if(inputValue !== "") {
+                linhatextual.push(inputValue);
+                texto.value = "";
+                lista.innerHTML = ''
+             linhatextual.forEach(function(item) {
+                    const li = document.createElement('li')
+                    li.textContent = item
+                    lista.appendChild(li)
+                })
+            }
+        })
+     </script>
+</html>

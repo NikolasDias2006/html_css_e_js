@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exe 006</title>
+    <style>
+         div {
+            font:normal 15pt arial;
+            background-color: #008000;
+            color: white;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Dom Studying</h1>
+
+    <div id="area">clik me</div>
+
+</body>
+      <script>
+        var cli = document.getElementById('area')
+        
+         cli.addEventListener("click",clik)
+         cli.addEventListener("mouseenter",join)
+         cli.addEventListener("mouseout",leave)
+
+        function clik() {
+                 cli.innerText = "you clik me,thanks"
+            } /* when you click */
+
+            function join() {
+                cli.style.backgroundColor = "#008000cb"
+                cli.innerText = "joining the green area"
+            } /* if you join */
+
+            function leave() {
+                cli.style.backgroundColor = "green"
+                cli.innerText = "you leave"
+
+            } /* after leaving */
+
+      </script>
+</html>

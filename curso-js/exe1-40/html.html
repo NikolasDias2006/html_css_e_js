@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lista de Números</title>
+</head>
+<body>
+
+  <input type="text" id="inputText" placeholder="Digite um número">
+  <button id="addButton">Adicionar</button>
+
+  <ul id="listaNumeros"></ul>
+
+  <script>
+    const inputText = document.getElementById('inputText');
+    const addButton = document.getElementById('addButton');
+    const listaNumeros = document.getElementById('listaNumeros');
+
+    const numeros = [];
+
+    addButton.addEventListener('click', () => {
+      const inputValue = inputText.value.trim();
+
+      if (inputValue !== '' && !isNaN(inputValue)) {
+        numeros.push(inputValue);
+
+        atualizarLista();
+      }
+
+      inputText.value = '';
+      inputText.focus();
+    });
+
+    function atualizarLista() {
+      listaNumeros.innerHTML = '';
+
+      numeros.forEach((numero) => {
+        const li = document.createElement('li');
+
+        if (numero % 2 === 0) {
+          li.innerHTML = '<mark>' + numero + '</mark>';
+        } else {
+          li.textContent = numero;
+        }
+
+        listaNumeros.appendChild(li);
+      });
+    }
+  </script>
+
+</body>
+</html>
